@@ -6,7 +6,7 @@ module Ruboty
     # A Ruboty Handler description
     class MentionToMentions < Base
       on /new mentions\s+(.*)\s+(.*)/m, name: 'register', description: 'redister trigger and mentions'
-      on /pattern\z/, name: 'detect', description: 'description'
+      on /(.*)/, name: 'detect', description: 'auto detecting registered mentions', all: true
 
 
       def register(message)
