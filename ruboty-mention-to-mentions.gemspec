@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'ruboty/mention/to/mentions/version'
+require 'ruboty/mention_to_mentions/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "ruboty-mention-to-mentions"
-  spec.version       = Ruboty::Mention::To::Mentions::VERSION
+  spec.version       = Ruboty::MentionToMentions::VERSION
   spec.authors       = ["Koutaro Nishi"]
   spec.email         = ["koutaro.nishi.fb@gmail.com"]
 

@@ -1,4 +1,4 @@
-require "ruboty/mention-to-mentions/actions/detect"
+require "ruboty/mention_to_mentions/actions/detect"
 
 module Ruboty
   module Handlers
