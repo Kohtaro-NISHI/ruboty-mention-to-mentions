@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'ruboty/mention_to_mentions/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "ruboty-mention-to-mentions"
+  spec.name          = "ruboty-mention_to_mentions"
   spec.version       = Ruboty::MentionToMentions::VERSION
   spec.authors       = ["Koutaro Nishi"]
   spec.email         = ["koutaro.nishi.fb@gmail.com"]
