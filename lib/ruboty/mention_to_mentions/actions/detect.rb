@@ -3,14 +3,12 @@ module Ruboty
     module Actions
       class Detect < Ruboty::Actions::Base
         def call
-          message.reply(detect)
-        rescue => e
-          message.reply(e.message)
-        end
-
-        private
-        def detect
-          # TODO: main logic
+          units = Ruboty::MentionToMentions::List.new(message.robot.brain).units
+          units.each do |unit|
+            if message.body.start_with?(unit.trigger)
+              message.reply("#{unit.mentions}\n#{message.body.gsub(unit.trigger, '')}")
+            end
+          end
         end
       end
     end
