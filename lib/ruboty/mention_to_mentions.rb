@@ -1,5 +1,5 @@
 require "ruboty/mention_to_mentions/version"
-require "ruboty/handlers/mention-to-mentions"
+require "ruboty/handlers/mention_to_mentions"
 
 module Ruboty
   module MentionToMentions
