@@ -30,7 +30,7 @@ module Ruboty
       private
 
       def list
-        brain.data['list'] ||= { units: [] }
+        brain.data['mention_to_mentions'] ||= { units: [] }
       end
     end
   end
