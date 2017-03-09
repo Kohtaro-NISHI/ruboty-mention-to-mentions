@@ -14,9 +14,10 @@ module Ruboty
           trigger = message.match_data[1]
           mentions = message.match_data[2]
           if unit = @list.find_by_trigger(trigger)
-            unit.message(new: false)
+            "`#{trigger}` は既に追加されています"
           else
-            @list.add({trigger: trigger, mentions: mentions}).message(new: true)
+            @list.add({trigger: trigger, mentions: mentions})
+            "`#{trigger}` を追加しました"
           end
         end
       end
