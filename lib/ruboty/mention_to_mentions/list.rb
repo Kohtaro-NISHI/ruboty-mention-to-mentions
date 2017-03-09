@@ -19,6 +19,10 @@ module Ruboty
         unit
       end
 
+      def delete(unit)
+        units.delete(unit)
+      end
+
       def find_by_trigger(trigger)
         units.find { |unit| unit.trigger == trigger }
       end
