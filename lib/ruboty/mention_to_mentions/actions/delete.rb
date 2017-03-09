@@ -14,9 +14,9 @@ module Ruboty
           trigger = message.match_data[1]
           if unit = @list.find_by_trigger(trigger)
             @list.delete(unit)
-            "#{trigger}を削除しました。"
+            "`#{trigger}` を削除しました。"
           else
-            "#{trigger}は登録されていません。"
+            "`#{trigger}` は登録されていません。"
           end
         end
       end
