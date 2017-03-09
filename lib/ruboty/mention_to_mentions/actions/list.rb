@@ -7,7 +7,7 @@ module Ruboty
           list = units.map do |unit|
             "#{unit.trigger} => #{unit.mentions}"
           end
-          message.reply("```#{list.join("\n")}```")
+          message.reply("```\n#{list.join("\n")}\n```")
         end
       end
     end
