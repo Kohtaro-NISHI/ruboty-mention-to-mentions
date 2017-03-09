@@ -7,7 +7,7 @@ module Ruboty
   module Handlers
     # A Ruboty Handler description
     class MentionToMentions < Base
-      on /mentions new\s+(.*)\s+(.*)/m, name: 'register', description: 'redister trigger and mentions'
+      on /mentions new\s+(.*?)\s+(.*)/m, name: 'register', description: 'redister trigger and mentions'
       on /mentions list/m, name: 'list', description: 'show redistered trigger and mentions'
       on /mentions delete\s+(.*)/m, name: 'delete', description: 'delete redistered trigger and mentions'
       on /(.*)/, name: 'detect', description: 'auto detecting registered mentions', all: true
